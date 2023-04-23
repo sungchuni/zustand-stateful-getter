@@ -36,8 +36,8 @@ const statefulGetterImpl: StatefulGetterImpl =
         const invalidationRequiredGetterKeys = Object.keys(
           nextStatePartial
         ).reduce((accumulator, partialKey) => {
-          const deps = propertyDependants.get(partialKey as keyof T)
-          deps?.forEach((dep) => accumulator.add(dep))
+          const dependantGetters = propertyDependants.get(partialKey as keyof T)
+          dependantGetters?.forEach((dependant) => accumulator.add(dependant))
 
           return accumulator
         }, new Set<keyof T>())
