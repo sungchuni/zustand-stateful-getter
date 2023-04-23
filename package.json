@@ -1,6 +1,6 @@
 {
   "name": "zustand-stateful-getter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Let fresh the Zustand object getter",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
