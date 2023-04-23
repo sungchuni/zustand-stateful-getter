@@ -23,10 +23,8 @@ const statefulGetterImpl: StatefulGetterImpl =
     const getterDeps = detectGetterDeps(initialStore)
     const propertyDependants = inverseDeps(getterDeps)
 
-    const getterPropertyDecriptors = extractGetterPropertyDescriptors(
-      initialStore,
-      getterDeps
-    )
+    const getterPropertyDecriptors =
+      extractGetterPropertyDescriptors(initialStore)
 
     const { setState: previousSetState } = api
 
