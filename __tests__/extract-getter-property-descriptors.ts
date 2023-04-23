@@ -10,16 +10,8 @@ describe('extractGetterPropertyDescriptors', () => {
       },
     }
 
-    type T = typeof initialStore
-
-    const getterDeps = new Map<keyof T, Set<keyof T>>([
-      ['fullName', new Set(['firstName', 'lastName'])],
-    ])
-
-    const getterPropertyDescriptors = extractGetterPropertyDescriptors(
-      initialStore,
-      getterDeps
-    )
+    const getterPropertyDescriptors =
+      extractGetterPropertyDescriptors(initialStore)
 
     expect(getterPropertyDescriptors.size).toBe(1)
     expect(getterPropertyDescriptors.get('fullName')).toStrictEqual({
