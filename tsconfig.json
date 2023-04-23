@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "include": ["__tests__/**/*", "src/**/*"],
+  "ts-node": {
+    "swc": true
+  }
+}
