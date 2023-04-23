@@ -2,7 +2,8 @@
   "name": "zustand-stateful-getter",
   "version": "1.0.0",
   "description": "Let fresh the Zustand object getter",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "scripts": {
     "build": "tsc src/*.ts --declaration --outDir dist",
     "test": "jest"
