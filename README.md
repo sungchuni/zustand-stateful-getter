@@ -1,6 +1,6 @@
 # zustand-stateful-getter
 
-Let fresh the zustand object getter.
+Leave zustand object getter alive.
 
 ## Installation
 
