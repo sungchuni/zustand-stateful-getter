@@ -68,3 +68,5 @@ With `subscribe` API and the [subscriptionsWithSelector middleware](https://gith
 ## Disclaimer
 
 It is recommended that the getter body be written without conditionals. See https://github.com/sungchuni/detective-getter-deps#disclaimer
+
+It relies heavily on the Proxy class, so you couldn't use it with versions of the JavaScript engine that don't have a Proxy implementation. Always consult the ["Can I use Proxy?"](https://caniuse.com/?search=Proxy).
