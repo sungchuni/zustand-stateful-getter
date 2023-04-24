@@ -8,7 +8,7 @@
     "build": "tsc src/*.ts --declaration --outDir dist",
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": ["zustand", "getter", "react"],
   "author": "sungchuni <new.sungchuni@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
