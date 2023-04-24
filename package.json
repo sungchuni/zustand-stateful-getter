@@ -4,6 +4,10 @@
   "description": "Leave zustand object getter alive.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sungchuni/zustand-stateful-getter"
+  },
   "scripts": {
     "build": "tsc src/*.ts --declaration --outDir dist",
     "test": "jest"
